@@ -4,6 +4,10 @@
     <title>Emergenaid</title>
 
     <link rel="stylesheet" href="css/style.css">
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- <script src="js/index.js"></script>-->
 </head>
 <body>
     <div id="main">
@@ -47,11 +51,21 @@
                         </td>
                     </tr>
                 </tbody>
-                <tbody>
-                    <!--Here comes dynamic content-->
+                <tbody id="aidContactTableContent">
+                    {{/contactList}}
+					<tr>
+						<td>{{firstname}}</td>
+						<td>{{lastname}}</td>
+						<td>{{phonenumber}}</td>
+						<td>{{sms}}</td>
+						<td>{{call}}</td>
+					</tr>
+					{{/contactList}}
                 </tbody>
             </table>
         </form>
+    </div>
+    <div id="test">
     </div>
 </body>
 </html>

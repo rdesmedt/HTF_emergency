@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMERGENAID</title>
+    <style>
+        body
+        {
+            height: 100%;
+            width: 100%;
+        }
+        .mybutton:hover
+        {
+            cursor: pointer;
+        }
+        div
+        {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<script>
+
+    function action()
+    {
+        document.getElementById("notify").submit();
+    }
+
+
+</script>
+
+    <div>
+        <h1>EMERGENAID</h1>
+        <figure class="mybutton">
+                <img type="submit" src="img/redBtn.png" onClick="action();">
+                <form id="notify" action="/notify">
+                </form>
+        </figure>
+        <h2>EMERGENCY BUTTON</h2>
+    </div>
+</body>
+</html>
