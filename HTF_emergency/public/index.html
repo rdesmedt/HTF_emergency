@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergenaid</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1>EMERGENAID</h1>
+        </header>
+        <form method="post" action="users">
+            <header>
+                <h2>Aid Contacts for: name (number)<!--TODO add dynamically--></h2>
+            </header>
+            <table id="aidContactTable">
+                <thead>
+                    <tr>
+                        <th><label for="firstname">First name</label></th>
+                        <th><label for="lastname">Last name</label></th>
+                        <th><label for="phonenumber" >Phone number</label></th>
+                        <th><label for="sms" >SMS</label></th>
+                        <th><label for="call" >Call</label></th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="inputRow">
+                        <td>
+                            <input type="text" id="firstname" name="firstname"/>
+                        </td>
+                        <td>
+                            <input type="text" id="lastname" name="lastname"/>
+                        </td>
+                        <td>
+                            <input type="number" id="phonenumber" name="phonenumber"/>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="sms" name="sms" checked/>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="call" name="call" checked>
+                        </td>
+                        <td>
+                            <input type="submit" value="Add" />
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <!--Here comes dynamic content-->
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

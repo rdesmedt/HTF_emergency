@@ -1,0 +1,84 @@
+@font-face
+{
+    font-family: 'lemonmilkregular';
+    src: url('../fonts/lemonmilk.eot');
+    src: url('../fonts/lemonmilk.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lemonmilk.woff2') format('woff2'),
+    url('../fonts/lemonmilk.woff') format('woff'),
+    url('../fonts/lemonmilk.ttf') format('truetype'),
+    url('../fonts/lemonmilk.svg#lemonmilkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'NexaL';
+    src:    url('../fonts/Nexa/Nexa%20Light.eot');
+    src:    url('../fonts/Nexa/Nexa%20Light.woff') format('woff'),
+    url('../fonts/Nexa/Nexa%20Light.ttf') format('truetype'),
+    url('../fonts/Nexa/Nexa%20Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'NexaB';
+    src:    url('../fonts/Nexa/Nexa%20Bold.eot');
+    src:    url('../fonts/Nexa/Nexa%20Bold.woff') format('woff'),
+    url('../fonts/Nexa/Nexa%20Bold.ttf') format('truetype'),
+    url('../fonts/Nexa/Nexa%20Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body
+{
+    background-color: #AC3838;
+    color: #FFFFFF;
+    font-family: "NexaL", sans-serif;
+}
+
+#main
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1
+{
+    font-family: lemonmilkregular, sans-serif;
+    text-align: center;
+    font-size: 150px;
+}
+
+h2
+{
+    text-align: center;
+    margin: 40px;
+    font-size: 50px;
+}
+
+#aidContactTable
+{
+    width: 100%;
+    text-align: center;
+}
+
+#aidContactTable thead
+{
+    font-size: 25px;
+    margin: 50px;
+}
+
+#aidContactTable #inputRow
+{
+    margin-bottom: 50px;
+}
+
+#aidContactTable td
+{
+    width: 16.66666666666667%; /*width 100 divided by 6*/
+}
