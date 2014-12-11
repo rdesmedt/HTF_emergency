@@ -1,16 +1,18 @@
-var person = {
-    firstName: "Christophe",
-    lastName: "Coenraets",
-    blogURL: "http://coenraets.org"
-};
+var sys = require('sys');
+var mustache = require('mustache');
 
-var client = new XMLHttpRequest();
-client.open('GET', '/foo.txt');
-client.onreadystatechange = function() {
-  alert(client.responseText);
+var view = {
+	  title: "Joe",
+	  calc: function() {
+	    return 2 + 4;
+	  }
+	};
+
+var template = "{{title}} spends {{calc}}";
+	
+exports.test = function(req, res)
+{
+	var html = mustache.to_html(template, view);
+
+	res.send(html);
 }
-client.send();
-
-var template = "<h1>{{firstName}} {{lastName}}</h1>Blog: {{blogURL}}";
-var html = Mustache.to_html(template, person);
-$('#sampleArea').html(html);
